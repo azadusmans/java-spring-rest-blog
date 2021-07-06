@@ -17,20 +17,4 @@ public interface PostRepository  extends JpaRepository<Post, Long>{
     @RestResource(rel="contains-title", path="containsTitle")
     List<Post> findByTitleContaining(String title);
 
-
-/*    public List<Post> findAll() {
-        return new ArrayList<>();
-    }
-
-    public List<Post> saveAll(List<Post> posts) {
-        return new ArrayList<>();
-    }
-
-    public Post save(Post post) {
-        return null;
-    }
-
-    public Optional<Post> findById(Long id) {
-        return null;
-    }*/
 }
